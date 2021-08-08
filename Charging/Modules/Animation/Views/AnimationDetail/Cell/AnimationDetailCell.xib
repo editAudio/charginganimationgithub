@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AnimationDetailCell" customModule="Charging" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="95"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="65" height="95"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvx-0g-NAR">
+                        <rect key="frame" x="0.0" y="0.0" width="65" height="95"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Je8-1L-HEW">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_selection_home" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-lB-elk">
+                                <rect key="frame" x="0.0" y="0.0" width="65" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZPf-lB-elk" firstAttribute="top" secondItem="Qvx-0g-NAR" secondAttribute="top" id="0Vm-2s-kdT"/>
+                            <constraint firstItem="ZPf-lB-elk" firstAttribute="leading" secondItem="Qvx-0g-NAR" secondAttribute="leading" id="Dyu-Kv-uty"/>
+                            <constraint firstAttribute="trailing" secondItem="Je8-1L-HEW" secondAttribute="trailing" id="UtV-nY-Hza"/>
+                            <constraint firstAttribute="trailing" secondItem="ZPf-lB-elk" secondAttribute="trailing" id="dQ8-8H-DEd"/>
+                            <constraint firstItem="Je8-1L-HEW" firstAttribute="leading" secondItem="Qvx-0g-NAR" secondAttribute="leading" id="edf-pC-ns9"/>
+                            <constraint firstAttribute="bottom" secondItem="Je8-1L-HEW" secondAttribute="bottom" id="iRl-YI-7Zc"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPf-lB-elk" secondAttribute="bottom" id="kk1-w0-P6x"/>
+                            <constraint firstItem="Je8-1L-HEW" firstAttribute="top" secondItem="Qvx-0g-NAR" secondAttribute="top" id="yNW-DP-daD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Qvx-0g-NAR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MnW-89-bE7"/>
+                <constraint firstAttribute="trailing" secondItem="Qvx-0g-NAR" secondAttribute="trailing" id="RVW-Zx-Mtt"/>
+                <constraint firstItem="Qvx-0g-NAR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hRl-Ip-daa"/>
+                <constraint firstAttribute="bottom" secondItem="Qvx-0g-NAR" secondAttribute="bottom" id="kw6-KA-5SC"/>
+            </constraints>
+            <connections>
+                <outlet property="imgAnimation" destination="Je8-1L-HEW" id="Lgs-kV-iFt"/>
+                <outlet property="imgSelection" destination="ZPf-lB-elk" id="bNe-ds-udK"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="82"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_selection_home" width="131" height="190"/>
+    </resources>
+</document>
